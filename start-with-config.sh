@@ -1,0 +1,1 @@
+docker run --rm --name cerbos -t -v "$(pwd)/policies:/policies" -v "$(pwd)/config:/config" -p 3592:3592 -p 3593:3593 ghcr.io/cerbos/cerbos:latest server --config=./config/conf.yaml
